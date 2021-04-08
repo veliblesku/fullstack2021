@@ -5,7 +5,6 @@ const Weather = (props) => {
     const [weather, setWeather] = useState(null)
     const api_key = process.env.REACT_APP_API_KEY    
     const {capital} = props
-    //const url2 = 'https://api.openweathermap.org/data/2.5/weather?q=Helsinki&appid=74944f2b334cd6218dd618107dfc360d'
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${capital}&units=metric&appid=${api_key}`
     useEffect(() => {
         axios
